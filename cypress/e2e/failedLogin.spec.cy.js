@@ -8,7 +8,7 @@ describe('failedLogin Functionality', () => {
 
         cy.get('#registerModal').should('be.visible').then(($modal) => {
             if ($modal.length) {
-                cy.get('#registerModal .btn-close').click(); // Adjust selector for the close button
+                cy.get('#registerModal .btn-close').click();
             }
         });
         cy.contains('Login').click()
